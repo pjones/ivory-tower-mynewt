@@ -1,0 +1,28 @@
+resolver: lts-8.19
+
+nix:
+  enable: false
+  shell-file: shell.nix
+
+packages:
+  - tower-mynewt
+  # - tower-mynewt-examples
+
+  - location: ../ivory/
+    extra-dep: true
+    subdirs:
+      - ivory
+      - ivory-artifact
+      - ivory-backend-c
+      - ivory-hw
+      - ivory-opts
+      - ivory-serialize
+      - ivory-stdlib
+
+  - location: ../tower/
+    extra-dep: true
+    subdirs:
+      - tower
+      - tower-config
+      - tower-hal
+      - tower-aadl
