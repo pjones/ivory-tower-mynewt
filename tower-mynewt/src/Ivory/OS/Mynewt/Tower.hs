@@ -13,14 +13,9 @@ the LICENSE file.
 -}
 
 --------------------------------------------------------------------------------
-module Ivory.OS.Mynewt.Tower.Mynewt
+module Ivory.OS.Mynewt.Tower
   ( compileTowerMynewt
   ) where
 
 --------------------------------------------------------------------------------
-import Ivory.Tower.Options
-import Ivory.Tower (Tower)
-
---------------------------------------------------------------------------------
-compileTowerMynewt :: (e -> fixme) -> (TOpts -> IO e) -> Tower e () -> IO ()
-compileTowerMynewt = undefined
+import Ivory.OS.Mynewt.Tower.Mynewt

@@ -6,7 +6,7 @@ nix:
 
 packages:
   - tower-mynewt
-  # - tower-mynewt-examples
+  - tower-mynewt-examples
 
   - location: ../ivory/
     extra-dep: true
